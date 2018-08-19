@@ -1,0 +1,154 @@
+body {background-color:#E0E0E0;}
+
+.mainpage_header{
+  width:100%;
+  width:100vw;
+  background-color:white;
+  display:inline-block;
+}
+
+.mainpage_header a{
+  padding:12px;
+  text-align:center;
+  color:black;
+  font-family:Arial, Helvetica, sans-serif;
+  /*float:right;*/
+  /*margin-right:5%;*/
+}
+
+.mainpage_header a:hover {
+  background-color:teal;
+  color: white;
+}
+
+#mainpage_header_nav{
+  float:right;
+  margin-top:10px;
+  margin-right:20%;
+}
+
+#mainpage_header_name{
+  width:15%;
+  background-color:teal;
+  padding:10px 5px 10px 5px;
+  margin-left:10%;
+  float:left;
+  text-align:center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:25px;
+  color:white;
+}
+
+.main_content{
+  background-color:white;
+  padding:20px 10px 20px 10px;
+  width:960px;
+  height:400px;
+  margin-top: 3%;
+  margin-left: 10%;
+  display:inline-block;
+}
+
+.main_content h2{
+  color:teal;
+  padding-left:50px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:bold; 
+}
+
+.main_content p{
+  color:black;
+  font-family:Arial, Helvetica, sans-serif;
+  line-height:1.6;
+  text-align:justify;
+  padding:1px 20px 14px 20px;
+}
+
+img.profilepic{
+  float:left;
+  padding:1px 14px 14px 20px;
+  width:280px;
+  height:160px;
+}
+
+/* Footer section of all pages */
+footer.portfolio {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:gray;
+  color: white;
+  text-align: center;
+}
+
+#projects text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: teal;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.contact_me_form{
+  padding-left:50px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.contact_me_form textarea, input{
+  width:90%;
+}
+
+/* Media Queries */
+
+/* When the width is 640 px or less  */
+@media screen and (max-width: 640px) {
+  /* The 'name' logo should stretch across the screen*/
+  #mainpage_header_name{
+    float:none;
+    width:100%;
+    margin-left:0%;
+  }
+
+  /* Main content box in index.html and 'contact me' form in contact.html*/
+  /* Reduce width to fit to viewport, change height to auto.
+     Also make margins zero  */
+  .main_content,.contact_me_form{
+    width:95vw;
+    height:auto;
+    margin-top: 0%;
+    margin-left: 0%;
+    padding-left:0px;
+  }
+
+  /* For screen widths less than 640 px, the text in the 'About Me'
+     section should float below the image.  
+     NOTE:I am not sure if float:left is correct, but it worked on my computer */
+  .main_content p{
+    float:left;
+  }
+}
+
+/* When the width is between 640 and 768 pixels */
+@media screen and (min-width: 640px) and (max-width: 768px) {
+  /* The 'name' logo should be closer to the left corner so reduce its margin */
+  /* Also increase its width (in percentage) because we have a smaller viewport */
+  #mainpage_header_name{
+    margin-left:2%;
+    width:25%;
+  }
+
+  /* Main content box in index.html and 'contact me' form in contact.html */
+  /* Adjust width to fit to viewport, change height to auto.
+     Also make margins zero  */
+  .main_content,.contact_me_form{
+    margin-left:2%;
+    margin-right:2%;
+    width:94vw;
+    height:auto;
+    padding-left:0px;
+  }
+
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <title>Narasimhan Ramesh's Portfolio</title>
+    <script type="text/javascript" src="scripts/contact.js"></script>
+  </head>
+
+  <!-- Main page -->
+  <body>
+
+    <!-- Main page Header Section : Tbis contains the main heading 
+         and a right-side navigation bar -->
+    <div class="mainpage_header">
+
+      <!-- My name in a teal-colored block that 
+           shows up on the left side-->
+      <div id="mainpage_header_name">
+        Ramesh N
+      </div>
+
+      <!-- Navigation bar for the website that 
+           shows up on the right side -->
+      <div id="mainpage_header_nav">
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+    </div>
+
+    <!-- Main page body section : Tbis contains the main heading 
+         and a right-side navigation bar -->
+    <div class="mainpage_body">
+      <div class="main_content">
+        <h2>Contact</h2>
+        <form class="contact_me_form" onsubmit="process_form()">
+          Name: <br> 
+          <input type="text" id="fullname">
+          <br><br>
+          Email:<br>
+          <input type="text"  id="email"><br>
+          <br>
+          Message:<br>
+          <textarea id="contact_message" rows="10%"></textarea>
+          <br><br>
+          <input type="submit" background-color="teal" value="Submit">
+        </form>
+      </div>
+    </div>
+
+    <!-- Main page footer section -->
+    <footer class="portfolio">
+      <p>&copy;&nbsp;Narasimhan Ramesh</p>
+    </footer>
+
+  </body>
+</html>
